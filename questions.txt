@@ -1,0 +1,11 @@
+What is CDN.
+why react and react dom two separate file, why not just in the same file.
+
+why crossorigin in script tag
+
+why production and development CDN different
+
+Two type of dependencies: dependencies and devDependencies.
+
+
+What is transitive dependencies.
