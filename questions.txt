@@ -9,3 +9,53 @@ Two type of dependencies: dependencies and devDependencies.
 
 
 What is transitive dependencies.
+
+How to connect local git repository to remote.
+
+what is git and github
+
+Descript NPM:
+package.json is configuration file for NPM. NPM manages dependencies(packages) and their versions
+
+Installing dependencies:
+     Bundler: what is bundler: webpack, parcel etc.
+     bundler package our app to make it production ready. It mini the files.
+
+
+
+What are symbols in dependencies ^ and ~ denotes.
+What is package-lock.json
+What is integrity inside dependency object under package-lock.json.
+What is babel.
+Should we put package-lock.json and package.json to the git.
+What is NPX command:
+    npx is to execute the package. npm to install in our machine but npx on the fly fetch and execute the package.
+What is browserslist?
+
+#
+React itself make our app fast but an extent. But to make it reasonable fast there are multiple tools that help to minify code, optimize code and helps our code to be execute fast.
+
+NPM does not stands for NODE PACKAGE MANAGER. Instead its everything any crazy full form.
+But it manages packages.
+
+PARCEL:
+    - Dev build
+    - Local server
+    - HMR (Hot Module Refreshment)
+    - File Watching Algorithms - written in c++
+    - Caching- Faster Builds (under .parcel-cache folder)
+    - Image optimization
+    - Minification
+    - Bundling
+    - Compressing
+    - Consistent Hashing
+    - Code Splitting
+    - Differential Bundling - support older browsers
+    - Diagnostic
+    - Error Handling
+    - HTTPs
+    - Tree Shaking - Remove unused code
+    - Different dev and prod bundles
+
+
+

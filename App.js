@@ -1,4 +1,5 @@
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -8,5 +9,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // CREATING A HIEARCHY DOM
 
-const parent = React.createElement('div', { id: "parent" }, React.createElement('div', { id: "child" }, [React.createElement('h1', {}, "Hello in hierarchy")]));
+const parent = React.createElement('div', { id: "parent" }, React.createElement('div', { id: "child" }, [React.createElement('h1', {}, "Hello Naresh Sharma")]));
 root.render(parent);
