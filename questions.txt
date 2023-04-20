@@ -59,3 +59,74 @@ PARCEL:
 
 
 
+EPISODE 3:
+facebook devloper created jsx.
+jsx is separate from react, not a part of react.
+JSX is not html in javascript, no, JSX is a html like syntax.
+JSX is not pure javascript
+JS ENGINE not understand jsx
+js engine understand ECMAScript.
+browsers not understand const jsxHeader = <h1>Hello from JSX heading</h1>
+JSX is transpiled before it reaches the JS Engine.
+Transpile is done by parcel. Parcel give this responsibility to Babel.
+Babel is a javascript compiler.
+As soon as we save out jsx code, babel transpile the code.
+
+Previously we see React.crateElement create a react object that is going to be rendered.
+Now if we use jsx then first babel converts the react object which again is going to be rendered
+
+Babel also do: when older verstions of browsers do not understand syntax like es6, bable converts out code to Compatible code.
+
+Babel reads tokens and create AST(Abstract syntax tree)
+const heading = <h1>Hello from JSX heading</h1> is not html, class can be added className, camelCase
+Attributes names in jsx should be in camelCase.
+
+If jsx in in single line that is valid syntax, but if we have to write multiple lines then wrap the code in paranthesis.
+(
+    <div>
+        <h1>Hello from JSX heading</h1>
+    </div>
+)
+
+
+# REACT COMPONETS: everything is component in react. Component names should be start with Capital letter.
+header , title, input box. search bar card everything in the ui is  a component.
+
+2 types of components:
+    1. Class based component (uses javascript classes):
+        Old way of writing the code.
+    2. Functional component:
+        New way of writing the code.
+        A function that returns the react element.
+
+Use {} to insert any javascript code into the JSX.
+
+Need to understand :
+let dynamicTitle= title_api.getData()
+const Title= () =>{
+    return <h1>{dynamicTitle}</h1>
+}
+Because if title_api get hacked and it returns malicious javascript code that gets injected in our code
+and get executed, then it would be dangerous.
+it can read localstorage, cookies.
+
+BUT JSX do sanitization for cross site scripts and we can use like this way.
+
+JSX has a boundation that there can be only one root element. but what if we want to have multiple items
+and do not want our dom to have un necessarily extra div to close others
+Solution to that is bound all content like:
+const Heading = () =>(
+    <React.Fragment>
+        <div id="container_1"> </dev>
+        <div id="container_1"></dev>
+    </React.Fragment>
+)
+Here React.Fragment behaves like an empty tag.
+
+But again if you do not want to write <React.Fragment> tag then you can use like:
+const Heading = () =>(
+    <>
+        <div id="container_1"> </dev>
+        <div id="container_1"></dev>
+    </>
+)
