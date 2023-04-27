@@ -130,3 +130,14 @@ const Heading = () =>(
         <div id="container_1"></dev>
     </>
 )
+
+
+EPISODE 4:
+NOTES:
+CONFIG DRIVEN UI:
+website(UI) is driven by data.
+controlling your ui using data. Config comes from backend.
+
+Whenever we loop over a list then each child should have a unique key value.
+Do not use index as keys if the order of item might change.
+
